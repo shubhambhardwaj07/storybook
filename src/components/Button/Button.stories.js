@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import Center from "../Center/Center";
 
 export default {
   title: "Form/Button",
@@ -7,6 +8,7 @@ export default {
   args: {
     children: "Button", //will get overriden by below if same given below
   },
+  // decorators: [(story) => <Center>{story()}</Center>],
 };
 
 export const Primary = () => <Button variant="primary">Primary</Button>;

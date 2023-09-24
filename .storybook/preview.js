@@ -1,4 +1,7 @@
 /** @type { import('@storybook/react').Preview } */
+import React from "react";
+import Center from "../src/components/Center/Center";
+
 const preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
@@ -16,5 +19,7 @@ const preview = {
     },
   },
 };
+
+export const decorators = [(story) => <Center>{story()}</Center>];
 
 export default preview;
